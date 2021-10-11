@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "need_statuses",
+  "info": {
+    "name": "needStatus",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "upperThreshold": {
+      "type": "decimal"
+    },
+    "lowerThreshold": {
+      "type": "decimal"
+    },
+    "goalWeight": {
+      "type": "decimal"
+    },
+    "needs": {
+      "collection": "need",
+      "via": "need_statuses",
+      "dominant": true
+    },
+    "order": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    },
+    "desiredState": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

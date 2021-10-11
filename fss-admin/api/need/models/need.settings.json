@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "needs",
+  "info": {
+    "name": "need"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startingValue": {
+      "type": "decimal",
+      "required": true
+    },
+    "incrementRate": {
+      "type": "decimal"
+    },
+    "incrementInterval": {
+      "type": "decimal"
+    },
+    "name": {
+      "type": "string"
+    },
+    "need_statuses": {
+      "via": "needs",
+      "collection": "need-status"
+    }
+  }
+}

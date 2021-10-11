@@ -1,0 +1,13 @@
+{
+  "name": "fss-admin",
+  "version": "1.0.0",
+  "description": "Admin app for FSS Game",
+  "main": "index.js",
+  "repository": "git@github.com:JerkyTreats/fss-admin.git",
+  "author": "JerkyTreats <justinfnearing@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node" : "~14"
+  }
+}
+

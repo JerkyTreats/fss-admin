@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/need-statuses",
+      "handler": "need-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/need-statuses/count",
+      "handler": "need-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/need-statuses/:id",
+      "handler": "need-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/need-statuses",
+      "handler": "need-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/need-statuses/:id",
+      "handler": "need-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/need-statuses/:id",
+      "handler": "need-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
